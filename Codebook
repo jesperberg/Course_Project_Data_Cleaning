@@ -1,1 +1,24 @@
 
+The project assignment was the following 5 steps:
+
+
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
+I began by reading all the train, and test files. In the script you can easily follow the steps I have made in order
+to complete this assignment.
+
+1. After reading in the tables, I merged them in order to create one data set to work with.
+
+2. I created a logical vector with the information TRUE or FALSE wether the column name had the string I searched for (mean, std).
+
+3. I merged my data set with my selected measurements and merged it in order to get the activity name for my data set.
+
+4. By using a for-loop I could then iterate through all the column names and re-name them into something more descriptive and easily read.
+
+5. I summarized my final data set in order to get the average per activity type and subject. This summarized (average of each activity type
+and subject), became my final, tidy data set which was exported.
